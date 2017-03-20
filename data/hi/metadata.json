@@ -1,31 +1,29 @@
 {
-    "appTitle": "{{language}} Language Pack Installer",
-    "appWelcomeMessage": "This plugin installs language definitions for the {{language}} language in Pentaho 5",
-    "language": "{{language}}",
-    "languageCode": "{{languageCode}}",
-    "version": "0.1",
-    "pentahoVersion": "5.0.1",
-    "maintainer": {
-        "name": "",
-        "email": "",
-        "img": "",
-        "url": "http:\/\/www.pentaho.com"
+    "appTitle": "Hindi Language Pack Installer",
+    "appWelcomeMessage": "This plugin installs language definitions for the Hindi language in Pentaho",
+    "language": "हिंदी",
+    "languageCode": "hi",
+    "pentahoVersion": "7.0",
+    "maturity": {
+        "lane": "Community",
+        "phase": "2"
     },
-    "credits": [
-        {
-            "name": "",
-            "email": "",
-            "img": "",
-            "url": ""
-        }
-    ],
-    "sponsors": [
-        {
-            "name": "",
-            "email": "",
-            "img": "",
-            "url": ""
-        }
-    ],
-
+    "maintainer": {
+        "name": "InfoAxon Technologies",
+        "email": "nikhil.kapoor@infoaxon.com",
+        "img": "",
+        "url": "http:\/\/www.infoaxon.com"
+    },
+    "credits": [{
+        "name": "InfoAxon Technologies",
+        "email": "nikhil.kapoor@infoaxon.com",
+        "img": "",
+        "url": "http:\/\/www.infoaxon.com"
+    }],
+    "sponsors": [{
+        "name": "InfoAxon Technologies",
+        "email": "contactus@infoaxon.com",
+        "img": "",
+        "url": "http:\/\/www.infoaxon.com"
+    }]
 }

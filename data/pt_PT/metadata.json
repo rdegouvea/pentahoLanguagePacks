@@ -1,31 +1,30 @@
 {
-    "appTitle": "{{language}} Language Pack Installer",
-    "appWelcomeMessage": "This plugin installs language definitions for the {{language}} language in Pentaho 5",
-    "language": "{{language}}",
-    "languageCode": "{{languageCode}}",
-    "version": "0.1",
-    "pentahoVersion": "5.0.1",
+    "appTitle": "Portuguese (European variant) Language Pack Installer",
+    "appWelcomeMessage": "This plugin installs language definitions for the European variant of the Portuguese language in Pentaho",
+    "language": "Português Europeu",
+    "languageCode": "pt_PT",
+    "pentahoVersion": "7.0",
+    "maturity": {
+        "lane": "Community",
+        "phase": "2"
+    },
     "maintainer": {
+        "name": "Xpand-IT",
+        "email": "mail@xpand-it.com",
+        "img": "http:\/\/www.xpand-it.com\/templates\/xpandit-experience\/images\/logo.png",
+        "url": "http:\/\/www.xpand-it.com"
+    },
+    "credits": [{
+        "name": "Xpand-IT",
+        "email": "mail@xpand-it.com",
+        "img": "http:\/\/www.xpand-it.com\/templates\/xpandit-experience\/images\/logo.png",
+        "url": "http:\/\/www.xpand-it.com"
+    }],
+    "sponsors": [{
         "name": "",
         "email": "",
         "img": "",
-        "url": "http:\/\/www.pentaho.com"
-    },
-    "credits": [
-        {
-            "name": "",
-            "email": "",
-            "img": "",
-            "url": ""
-        }
-    ],
-    "sponsors": [
-        {
-            "name": "",
-            "email": "",
-            "img": "",
-            "url": ""
-        }
-    ],
+        "url": ""
+    }]
 
 }

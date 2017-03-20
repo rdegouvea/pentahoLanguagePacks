@@ -1,31 +1,29 @@
 {
-    "appTitle": "{{language}} Language Pack Installer",
-    "appWelcomeMessage": "This plugin installs language definitions for the {{language}} language in Pentaho 5",
-    "language": "{{language}}",
-    "languageCode": "{{languageCode}}",
-    "version": "0.1",
-    "pentahoVersion": "5.0.1",
+    "appTitle": "Spanish (Mexican variant) Language Pack Installer",
+    "appWelcomeMessage": "This plugin installs language definitions for the mexican variant of the Spanish language in Pentaho",
+    "language": "Mexico's Spanish",
+    "languageCode": "es_MX",
+    "pentahoVersion": "7.0",
+    "maturity": {
+        "lane": "Community",
+        "phase": "2"
+    },
     "maintainer": {
-        "name": "",
-        "email": "",
+        "name": "Domingo Lavin",
+        "email": "domingo.lavin@vinkos.com",
         "img": "",
         "url": "http:\/\/www.pentaho.com"
     },
-    "credits": [
-        {
-            "name": "",
-            "email": "",
-            "img": "",
-            "url": ""
-        }
-    ],
-    "sponsors": [
-        {
-            "name": "",
-            "email": "",
-            "img": "",
-            "url": ""
-        }
-    ],
-
+    "credits": [{
+        "name": "Antonio García Domínguez",
+        "email": "antonio.garciadominguez@uca.es",
+        "img": "",
+        "url": "http:\/\/neptuno.uca.es\/~agarcia"
+    }],
+    "sponsors": [{
+        "name": "",
+        "email": "",
+        "img": "",
+        "url": ""
+    }]
 }

@@ -1,125 +1,149 @@
-{
-    TITLE_LABEL: 'Authentication',
-    AUTHENTICATION_METHOD_LABEL: 'Authentication Method',
-    AUTHENTICATION_METHOD_DESCRIPTION_LABEL: 'Select where user and their log in credentials will be managed:',
-    AUTHENTICATION_METHOD_CHANGE_FROM_JCR_TO_JCR: 'You have not completed configuring your external authentication method. You will loose any changes you have made. Do you want to continue?',
-    AUTHENTICATION_METHOD_CHANGE_FROM_JCR_TO_LDAP: 'Switching authentication method will start a new configuration and may change users, roles and login passwords. Are you sure you want to make this change?',
-    AUTHENTICATION_METHOD_CHANGE_FROM_LDAP_TO_JCR: 'Setting the Authentication method to Local will remove your current LDAP security settings. Do you want to proceed?',
-    AUTHENTICATION_METHOD_TITLE: 'Authentication Method Change',
-    PENTAHO: 'Local - Use basic Pentaho authentication',
-    LDAP: 'External - Use LDAP / Active Directory server',
+/*!
+ * PENTAHO CORPORATION PROPRIETARY AND CONFIDENTIAL
+ *
+ * Copyright 2002 - 2014 Pentaho Corporation (Pentaho). All rights reserved.
+ *
+ * NOTICE: All information including source code contained herein is, and
+ * remains the sole property of Pentaho and its licensors. The intellectual
+ * and technical concepts contained herein are proprietary and confidential
+ * to, and are trade secrets of Pentaho and may be covered by U.S. and foreign
+ * patents, or patents in process, and are protected by trade secret and
+ * copyright laws. The receipt or possession of this source code and/or related
+ * information does not convey or imply any rights to reproduce, disclose or
+ * distribute its contents, or to manufacture, use, or sell anything that it
+ * may describe, in whole or in part. Any reproduction, modification, distribution,
+ * or public display of this information without the express written authorization
+ * from Pentaho is strictly prohibited and in violation of applicable laws and
+ * international treaties. Access to the source code contained herein is strictly
+ * prohibited to anyone except those individuals and entities who have executed
+ * confidentiality and non-disclosure agreements or other agreements with Pentaho,
+ * explicitly covering such access.
+ */
+
+define({
+    TITLE_LABEL: 'Authentifizierung',
+    AUTHENTICATION_METHOD_LABEL: 'Authentifizierungsmethode',
+    AUTHENTICATION_METHOD_DESCRIPTION_LABEL: 'Wählen Sie aus, wo Benutzer und deren Anmeldeinformationen verwaltet werden sollen:',
+    AUTHENTICATION_METHOD_CHANGE_FROM_JCR_TO_JCR: 'Die Konfiguration der externen Authentifizierungsmethode wurde nicht abgeschlossen. Alle Änderungen werden gelöscht. Möchten Sie fortfahren?',
+    AUTHENTICATION_METHOD_CHANGE_FROM_JCR_TO_LDAP: 'Wenn Sie die Authentifizierungsmethode wechseln, wird eine neue Konfiguration gestartet, die eventuell Benutzer, Rollen und Anmeldekennwörter ändert. Sind Sie sicher, dass Sie diese Änderung durchführen möchten?',
+    AUTHENTICATION_METHOD_CHANGE_FROM_LDAP_TO_JCR: 'Durch die Einstellung der Authentifizierungsmethode auf Lokal, werden die aktuellen LDAP-Sicherheitseinstellungen entfernt. Möchten Sie fortfahren?',
+    AUTHENTICATION_METHOD_TITLE: 'Änderung der Authentifizierungsmethode',
+    PENTAHO: 'Lokal – Grundlegende Pentaho-Authentifizierung verwenden',
+    LDAP: 'Extern – LDAP-/Active Directory-Server verwenden',
 
     //ldap server configuration
-    LDAP_CONNECTION_TITLE_LABEL: 'LDAP Server Connection',
-    LDAP_SERVER_URL_LABEL: 'Server URL:',
-    LDAP_USER_LABEL: 'User Name:',
-    LDAP_PASSWORD_LABEL: 'Password:',
-    LDAP_TEST_CONNECTION_LABEL : 'Test connection to proceeed the LDAP setup',
-    LDAP_SERVER_URL_DESCRIPTION: 'The connection URL to use when connecting to the directory server',
-    LDAP_USER_DESCRIPTION: 'Distinguished name of a user with read access to directory',
-    LDAP_PASSWORD_DESCRIPTION: 'The password of the user specified above',
-    LDAP_TEST_SERVER_CONNECTION_LABEL: 'Test Server Connection',
+    LDAP_CONNECTION_TITLE_LABEL: 'LDAP-Serververbindung',
+    LDAP_SERVER_URL_LABEL: 'Server-URL:',
+    LDAP_USER_LABEL: 'Benutzername:',
+    LDAP_PASSWORD_LABEL: 'Kennwort:',
+    LDAP_TEST_CONNECTION_LABEL: 'Verbindung testen, um mit dem LDAP-Setup fortzufahren',
+    LDAP_SERVER_URL_DESCRIPTION: 'Für die Verbindung mit dem Verzeichnisserver zu verwendende URL-Verbindung',
+    LDAP_USER_DESCRIPTION: 'Definierter Name eines Benutzers mit Lesezugriff für das Verzeichnis',
+    LDAP_PASSWORD_DESCRIPTION: 'Das Kennwort des oben angegebenen Benutzers',
+    LDAP_TEST_SERVER_CONNECTION_LABEL: 'Serververbindung testen',
 
     //ldap administration configuration
-    LDAP_ADMINISTRATOR_TITLE_LABEL: 'Pentaho System Administrator',
-    LDAP_ADMINISTRATOR_USER_LABEL: 'Select user from LDAP server:',
-    LDAP_ADMINISTRATOR_ROLE_LABEL: 'Select role from LDAP server:',
-    LDAP_ADMINISTRATOR_USER_DESCRIPTION: 'Select the user from LDAP server to assign as the Pentaho system administrator',
-    LDAP_ADMINISTRATOR_ROLE_DESCRIPTION: 'Select the role from LDAP server to assign as the Pentaho system administrator',
+    LDAP_ADMINISTRATOR_TITLE_LABEL: 'Pentaho-Systemadministrator',
+    LDAP_ADMINISTRATOR_USER_LABEL: 'Benutzer über LDAP-Server auswählen:',
+    LDAP_ADMINISTRATOR_ROLE_LABEL: 'Rolle über LDAP-Server auswählen:',
+    LDAP_ADMINISTRATOR_USER_DESCRIPTION: 'Benutzer über LDAP-Server als Pentaho-Systemadministrator zuweisen',
+    LDAP_ADMINISTRATOR_ROLE_DESCRIPTION: 'Rolle über LDAP-Server als Pentaho-Systemadministrator zuweisen',
 
     //ldap configuration
-    LDAP_CONFIGURATION_TITLE: 'LDAP Configuration',
-    LDAP_CONFIGURATION_PROVIDER: 'LDAP Provider:',
-    LDAP_TYPE_SELECTOR_APACHE_OPTION_LABEL: 'Apache Directory Server',
+    LDAP_CONFIGURATION_TITLE: 'LDAP-Konfiguration',
+    LDAP_CONFIGURATION_PROVIDER: 'LDAP-Anbieter:',
+    LDAP_TYPE_SELECTOR_APACHE_OPTION_LABEL: 'Apache-Verzeichnisserver',
     LDAP_TYPE_SELECTOR_MICROSOFT_OPTION_LABEL: 'Microsoft Active Directory',
-    LDAP_TYPE_SELECTOR_CUSTOM_OPTION_LABEL: 'Custom Configuration',
+    LDAP_TYPE_SELECTOR_CUSTOM_OPTION_LABEL: 'Benutzerdefinierte Konfiguration',
 
     //ldap apache configuration
-    LDAP_USER_BASE_LABEL: 'User Base:',
-    LDAP_USER_SEARCH_BASE_LABEL: 'Search Base:',
-    LDAP_USER_SEARCH_FILTER_LABEL: 'Search Filter:',
-    LDAP_GROUP_BASE_LABEL: 'Group Base: ',
+    LDAP_USER_BASE_LABEL: 'Benutzerbasis:',
+    LDAP_USER_SEARCH_BASE_LABEL: 'Suchbasis:',
+    LDAP_USER_SEARCH_FILTER_LABEL: 'Suchfilter:',
+    LDAP_GROUP_BASE_LABEL: 'Gruppenbasis: ',
     LDAP_USER_BASE_DESCRIPTION: '',
-    LDAP_USER_SEARCH_BASE_DESCRIPTION: 'The Base (by username) for user searches.',
-    LDAP_USER_SEARCH_FILTER_DESCRIPTION: 'Filter (by username) for user searches. The attribute you specify here must contain the value that you want your users to log into Pentaho with.',
+    LDAP_USER_SEARCH_BASE_DESCRIPTION: 'Die Basis (nach Benutzername) für Benutzersuchen.',
+    LDAP_USER_SEARCH_FILTER_DESCRIPTION: 'Der Filter (nach Benutzername) für Benutzersuchen. Das hier angegebene Attribut muss den Wert beinhalten, mit dem sich der Benutzer bei Pentaho anmelden soll.',
     LDAP_GROUP_BASE_DESCRIPTION: '',
 
     //ldap custom user search configuration
-    LDAP_USER_SEARCH_TITLE: 'User Search',
-    
+    LDAP_USER_SEARCH_TITLE: 'Benutzersuche',
+
     //ldap custom roles configuration 
-    LDAP_ROLES_TITLE: 'Roles',    
-    LDAP_ROLE_BASE_LABEL: 'Role Attribute:',
-    LDAP_ROLE_SEARCH_FILTER_LABEL: 'Role Search Filter:',
-    LDAP_ROLE_SEARCH_BASE_LABEL: 'Role Search Base:',
-    LDAP_ROLE_BASE_DESCRIPTION: 'The attribute used for role values',
-    LDAP_ROLE_SEARCH_FILTER_DESCRIPTION: 'Filter for "all roles" searches',
-    LDAP_ROLE_SEARCH_BASE_DESCRIPTION: 'Base for "all roles" searches',
+    LDAP_ROLES_TITLE: 'Rollen',
+    LDAP_ROLE_BASE_LABEL: 'Rollenattribut:',
+    LDAP_ROLE_SEARCH_FILTER_LABEL: 'Suchfilter für Rollen:',
+    LDAP_ROLE_SEARCH_BASE_LABEL: 'Suchbasis für Rollen:',
+    LDAP_ROLE_BASE_DESCRIPTION: 'Das für Rollenwerte verwendete Attribut',
+    LDAP_ROLE_SEARCH_FILTER_DESCRIPTION: 'Filter für Suchen nach: &quot;alle Rollen&quot;',
+    LDAP_ROLE_SEARCH_BASE_DESCRIPTION: 'Basis für Suchen nach: &quot;alle Rollen&quot;',
 
     //ldap custom populator configuration
-    LDAP_POPULATOR_TITLE: 'Populator',
-    LDAP_POPULATOR_GROUP_ROLE_ATTRIBUTE_LABEL: 'Group Role Attribute:',
-    LDAP_POPULATOR_GROUP_ROLE_ATTRIBUTE_DESCRIPTION: 'The attribute to get role names from.',
-    LDAP_POPULATOR_GROUP_SEARCH_BASE_LABEL: 'Group Search Base:',
-    LDAP_POPULATOR_GROUP_SEARCH_BASE_DESCRIPTION: 'Base (by user DN or username) for role searches.',
-    LDAP_POPULATOR_GROUP_SEARCH_FILTER_LABEL: 'Group Search Filter:',
-    LDAP_POPULATOR_GROUP_SEARCH_FILTER_DESCRIPTION: 'The filter to use when searching group objects.',
-    LDAP_POPULATOR_ROLE_PREFIX_LABEL: 'Role Prefix:',
-    LDAP_POPULATOR_ROLE_PREFIX_DESCRIPTION: 'A prefix to add to the beginning of the role name found in the group role attribute; the value can be an empty string.',
-    LDAP_POPULATOR_UPPERCASE_LABEL: 'Convert To Upper Case:',
-    LDAP_POPULATOR_UPPERCASE_DESCRIPTION: 'Indicates whether or not retrieved role names are converted to uppercase.',
-    LDAP_POPULATOR_SUBTREE_LABEL: 'Subtree:',
-    LDAP_POPULATOR_SUBTREE_DESCRIPTION: 'Indicates whether or not the search must include the current object and all children. If set to false, the search must include the current object only.',
-    
+    LDAP_POPULATOR_TITLE: 'Ausfüllen',
+    LDAP_POPULATOR_GROUP_ROLE_ATTRIBUTE_LABEL: 'Attribut der Gruppenrolle:',
+    LDAP_POPULATOR_GROUP_ROLE_ATTRIBUTE_DESCRIPTION: 'Das Attribut, um Rollennamen abzurufen.',
+    LDAP_POPULATOR_GROUP_SEARCH_BASE_LABEL: 'Suchbasis für Gruppen:',
+    LDAP_POPULATOR_GROUP_SEARCH_BASE_DESCRIPTION: 'Die Basis (nach Benutzer-DN oder Benutzername) für Rollensuchen.',
+    LDAP_POPULATOR_GROUP_SEARCH_FILTER_LABEL: 'Suchfilter der Gruppe:',
+    LDAP_POPULATOR_GROUP_SEARCH_FILTER_DESCRIPTION: 'Der Filter, um Gruppenobjekte zu suchen.',
+    LDAP_POPULATOR_ROLE_PREFIX_LABEL: 'Rollenpräfix:',
+    LDAP_POPULATOR_ROLE_PREFIX_DESCRIPTION: 'Ein Präfix, das dem Rollennamen (das im Rollenattribut der Gruppe gefunden wurde) am Anfang hinzugefügt wird. Der Wert kann eine leere Zeichenfolge sein.',
+    LDAP_POPULATOR_UPPERCASE_LABEL: 'In Großbuchstaben umwandeln:',
+    LDAP_POPULATOR_UPPERCASE_DESCRIPTION: 'Zeigt an, ob abgerufene Rollennamen in Großbuchstaben umgewandelt werden sollen oder nicht.',
+    LDAP_POPULATOR_SUBTREE_LABEL: 'Unterstruktur:',
+    LDAP_POPULATOR_SUBTREE_DESCRIPTION: 'Zeigt an, ob in der Suche das aktuelle Objekt mit allen Unterelementen enthalten sein muss oder nicht. Wenn dies auf &quot;false&quot; eingestellt ist, darf die Suche nur das aktuelle Objekt enthalten.',
+
     //dialogs
-    LDAP_BROWSER_TITLE: 'LDAP Browser',
-    LDAP_WARNING: 'Warning',
-    LDAP_DIRTY_CHANGE: 'You have unsaved changes. Do you want to continue?',
-    LDAP_CONNECTOR_TEST: 'LDAP Connection',
-    LDAP_CONNECTOR_TESTING: 'Testing connection to LDAP server.',
-    LDAP_CONNECTOR_EDIT: 'Changing server conneciton will remove all current authentication and premissions settings. Do you want to continue?',
+    LDAP_BROWSER_TITLE: 'LDAP-Browser',
+    LDAP_WARNING: 'Warnung',
+    LDAP_DIRTY_CHANGE: 'Sie haben ungespeicherte Änderungen. Möchten Sie fortfahren?',
+    LDAP_CONNECTOR_TEST: 'LDAP-Verbindung',
+    LDAP_CONNECTOR_TESTING: 'Verbindung zum LDAP-Server wird getestet.',
+    LDAP_CONNECTOR_EDIT: 'Wenn Sie die Serververbindung ändern, werden alle aktuellen Authentifizierungs- und Berechtigungseinstellungen entfernt. Möchten Sie fortfahren?',
 
-    LDAP_USER_TEST_DESCRIPTION: 'With the search base and search filter configuration search for a user name that exists in your LDAP server.',
-    LDAP_USER_TEST_LABEL: 'Search For User:',
-    LDAP_USER_TEST_SUCCESS_LABEL_PART1: 'Congratualtions. User',
-    LDAP_USER_TEST_SUCCESS_LABEL_PART2: 'was found on the LDAP server.',
-    LDAP_USER_TEST_ERROR_LABEL_PART1: 'Unable to find user',
-    LDAP_USER_TEST_ERROR_LABEL_PART2: 'on the LDAP server. Verify settings and try again.',
-    LDAP_USER_DOMAIN_LABEL: 'User DN:',
+    LDAP_USER_TEST_DESCRIPTION: 'Suchen Sie nach einem Benutzernamen, der im LDAP-Server existiert, indem Sie die Suchbasis und den Suchfilter konfigurieren.',
+    LDAP_USER_TEST_LABEL: 'Nach Benutzer suchen:',
+    LDAP_USER_TEST_SUCCESS_LABEL_PART1: 'Herzlichen Glückwunsch. Benutzer',
+    LDAP_USER_TEST_SUCCESS_LABEL_PART2: 'wurde auf dem LDAP-Server gefunden.',
+    LDAP_USER_TEST_ERROR_LABEL_PART1: 'Benutzer konnte',
+    LDAP_USER_TEST_ERROR_LABEL_PART2: 'auf dem LDAP-Server nicht gefunden werden. Überprüfen Sie die Einstellungen und versuchen Sie es erneut.',
+    LDAP_USER_DOMAIN_LABEL: 'Benutzer-DN:',
 
-    LDAP_POPULATOR_TEST: 'LDAP Populator Test',
-    LDAP_USER_TEST: 'LDAP User Test',
-    LDAP_ROLES_TEST: 'LDAP Roles Test',
-    LDAP_CONNECTOR_TEST_PASSED: 'Connection to the LDAP server was successful.' ,
-    LDAP_CONNECTOR_TEST_FAILED: 'Unable to connect to LDAP server. Verify settings and try again.',
-   
-    SAVE: 'Save',
-    TEST: 'Test',        
-    CANCEL: 'Cancel',
-    YES: 'Yes',
-    YES_CHANGE: 'Yes, Continue',
-    NO: 'No',
+    LDAP_POPULATOR_TEST: 'LDAP-Ausfüll-Test',
+    LDAP_USER_TEST: 'LDAP-Benutzer-Test',
+    LDAP_ROLES_TEST: 'LDAP-Rollen-Test',
+    LDAP_CONNECTOR_TEST_PASSED: 'Verbindung mit dem LDAP-Server erfolgreich.',
+    LDAP_CONNECTOR_TEST_FAILED: 'Verbindung zum LDAP-Server nicht möglich. Überprüfen Sie die Einstellungen und versuchen Sie es erneut.',
+
+    SAVE: 'Speichern',
+    TEST: 'Testen',
+    CANCEL: 'Abbrechen',
+    YES: 'Ja',
+    YES_CHANGE: 'Ja, fortfahren',
+    NO: 'Nein',
     OK: 'OK',
-    CLOSE: 'Close',
-    TEST_PASSED: 'Test Passed',
-    TEST_FAILED: 'Test Failed',
+    CLOSE: 'Schließen',
+    TEST_PASSED: 'Test bestanden',
+    TEST_FAILED: 'Test fehlgeschlagen',
 
-    CONFIGURATION_SAVED: 'Changes to authentication method have been saved, however, your changes will not take effect until you restart the server.',
-  
+    CONFIGURATION_SAVED: 'Die Änderungen in der Authentifizierungsmethode wurden gespeichert. Die Änderungen werden jedoch erst übernommen, wenn Sie den Server neu starten.',
+
     //licenseManager
-    PRODUCT: 'Product',
-    START_DATE : 'Start Date',
-    END_DATE : 'End Date',
-    VERSION : 'Version',
-    LICENSES : 'Licenses',
-    DELETE_TITLE : 'Delete Selected License?',
-    DELETE_WARNING: 'You are about to delete the selected license. Do you want to continue?',
+    PRODUCT: 'Produkt',
+    START_DATE: 'Startdatum',
+    END_DATE: 'Enddatum',
+    VERSION: 'Version',
+    LICENSES: 'Lizenzen',
+    DELETE_TITLE: 'Ausgewählte Lizenz löschen?',
+    DELETE_WARNING: 'Sie sind dabei, die ausgewählte Lizenz zu löschen. Möchten Sie fortfahren?',
 
-    LICENSE_VALID_LICENSE_FOUND_LOG : 'Valid biserver-ee license found',
-    LICENSE_NO_VALID_LICENSE_FOUND_LOG : 'No valid biserver-ee license found',
-    LICENSE_NO_VALID_LICENSE_MESSAGE_HEADER : "Missing or expired license.",
-LICENSE_NO_VALID_LICENSE_MESSAGE_BODY : 'To continue you must update your Pentaho BI Platform license. If you are not ready now you may <a href="%CONTEXT_PATH%\Logout" target="_top">log out</a> and come back later.',<TRANSLATE ME>
-    LICENSE_CANCEL_BUTTON : 'Log Out',
-    LICENSE_OK_BUTTON : 'Ok'
+    LICENSE_VALID_LICENSE_FOUND_LOG: 'Gültige biserver-ee-Lizenz gefunden',
+    LICENSE_NO_VALID_LICENSE_FOUND_LOG: 'Keine gültige biserver-ee-Lizenz gefunden',
+    LICENSE_NO_VALID_LICENSE_MESSAGE_HEADER: "Fehlende oder abgelaufene Lizenz.",
+    LICENSE_NO_VALID_LICENSE_MESSAGE_BODY: 'Sie müssen die Pentaho BI Platform-Lizenz aktualisieren, um fortfahren zu können. Wenn Sie dies später ausführen möchten, <a href="%CONTEXT_PATH%\Logout" target="_top">melden Sie sich ab</a> und kommen Sie später wieder.',
+    LICENSE_CANCEL_BUTTON: 'Abmelden',
+    LICENSE_OK_BUTTON: 'OK',
+    LICENSE_ADD_LICENSE: 'Lizenz hinzufügen',
+    LICENSE_DELETE_LICENSE: 'Lizenz löschen'
 
-}
+});

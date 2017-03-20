@@ -1,3 +1,6 @@
+/* This Source Code Form is subject to the terms of the Mozilla Public
+ * License, v. 2.0. If a copy of the MPL was not distributed with this
+ * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 var MixinButtonAPI = Base.extend({
     initButtonAPI : function(bool){
         bool = (bool == undefined) ? true : bool;
@@ -32,7 +35,7 @@ var ActionButtonComponent = ActionComponent.extend(new MixinButtonAPI()).extend(
          */
         return "Button Component that triggers a server action when clicked";
     },
-    draw: function() {
+    render: function() {
         var myself = this,
             ad = this.actionDefinition;
         var b = $("<button type='button'/>").text(this.label).unbind("click").bind("click", function(){
@@ -50,5 +53,7 @@ var ActionButtonComponent = ActionComponent.extend(new MixinButtonAPI()).extend(
             this.initButtonAPI(false);
         }
         b.appendTo($("#"+ this.htmlObject).empty());
+
+        //this._doAutofocus();
     }
 });
